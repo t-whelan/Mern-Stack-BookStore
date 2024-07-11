@@ -12,7 +12,7 @@ const DATABASE_URL = process.env.DATABASE_URL;
 const PORT = process.env.PORT;
 
 console.log(PORT);
-console(DATABASE_URL);
+console.log(DATABASE_URL);
 
 // Middleware for handling CORS POLICY
 // Option 1: Allow All Origins with Default of cors(*)
