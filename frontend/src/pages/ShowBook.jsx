@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://mern-stack-bookstore-1.onrender.com//books/${id}`)
+      .get(`https://mern-stack-bookstore-1.onrender.com/books/${id}`)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
