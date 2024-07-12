@@ -1,4 +1,3 @@
-import { json } from "express";
 import cors from "cors";
 import express from "express";
 import booksRoute from "./routes/booksRoute.js";
@@ -8,8 +7,9 @@ dotenv.config();
 
 const app = express();
 
-const DATABASE_URL = process.env.DATABASE_URL;
-const PORT = process.env.PORT;
+const DATABASE_URL =
+  "mongodb+srv://whelantionne:VrIJKh8wEk7f7m0@books-store-mern.mf5exqa.mongodb.net/?retryWrites=true&w=majority&appName=Books-Store-MERN";
+const PORT = 5555;
 
 console.log(PORT);
 console.log(DATABASE_URL);
